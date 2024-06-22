@@ -1,0 +1,187 @@
+@font-face {
+    font-family: Poppins;
+    src: url(Fonty/Poppins-Regular.ttf);
+} 
+* {
+    font: "Poppins";
+}
+
+body > header {
+    height: 70px;
+    width: 100%;
+    background: rgb(12, 97, 166);
+    color: white;
+    display: flex;
+    justify-content:space-around;
+    top: 0;
+}
+
+#logo {
+    height: 40px;
+    margin: auto 0 auto 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: url('images/Logo.png') no-repeat;
+    background-size: 40px 40px;
+}
+
+#logo >* {
+    margin: 0 0 0 50px;
+}
+
+#logo h1 {
+    font-weight: normal;
+    font-size: 1.5em;
+    line-height: 1.2 em;
+ }
+
+nav ul{
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+
+nav ul li{
+    padding: 0px 25px;
+    margin: 0 5px;
+    font-size: 1em;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+.aktivni, nav ul li:hover{
+    border-bottom: 2px solid rgb(231, 243, 253);
+    background-color:rgb(40, 150, 240);
+    border-radius: 10px;
+}
+html {
+    height: 100%;
+    box-sizing: border-box;
+}
+body {
+    font: 14px "Poppins";
+    background-color: rgb(231, 243, 253);
+    color: rgb(2, 14, 23);
+    flex-direction: column;
+    box-sizing: border-box;
+    margin:0;
+    min-height: 100vh;
+    min-height: 100%;
+ }
+
+h2 {
+    margin-left: 20px;
+}
+
+main h1,
+main p {
+    margin-left: 20px;
+}
+
+main {
+    margin: 0 auto;
+    max-width: 960px;
+}
+.vypis {
+    border-collapse: collapse;
+    border: 2px solid black;
+    width: 80%;
+    text-align: left;
+}
+
+.vypis th {
+    border: 2px solid black;
+    background-color: rgb(40, 150, 240);
+    height: 40px;
+    padding-left: 10px;
+}
+
+.vypis td{
+    border: 2px solid black;
+    height: 30px;
+    padding-left: 10px;
+    
+}
+
+#smazatBunka {
+    width: 7%;
+}
+
+#smazatBunka:hover {
+    background-color: rgb(208, 232, 251);
+}
+
+#smazatButton {
+    background-color: transparent;
+    font-family: Poppins;
+    color: black;
+    border: 0;
+    align-self: center;
+}
+
+#seznam-pojistencu{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.inputy{
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.inputy img{
+    border: solid 2px;
+    /* max-height: 100%; */
+    width:min-content;
+    height: min-content;
+    margin-right: 20px;
+}
+
+.inputy div{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.inputy table {
+    width: 50%;
+}
+
+.inputy input{
+    border-radius: 5px;
+    border-color: rgb(193, 192, 192);
+    height: 30px;
+    width: 90%;
+}
+
+#tlacitko{
+    background-color:rgb(12, 97, 166);
+    color: white;
+    border: 0;
+    border-radius: 10px;
+    padding: 10px 50px;
+    margin-top: 10px;
+    align-self: center;
+}
+
+#tlacitko:hover{
+    background-color: rgb(40, 150, 240);
+}
+
+@media screen and (max-width: 500px) {
+    .vypis {
+        width: 100%;
+    }
+}
