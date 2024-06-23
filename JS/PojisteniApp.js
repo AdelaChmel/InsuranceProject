@@ -69,7 +69,7 @@ class PojisteniApp {
             bunkaSmazat.id = "smazatBunka";
              //bunkaSmazat.innerHTML = '';
             tr.appendChild(bunkaSmazat);
-            this._pridejTlacitko("Smazat", () => {
+            this._pridejTlacitko("Delete", () => {
                 this.pojistenci = this.pojistenci.filter(p => p !== pojistenec);
                 this.ulozPojistence();
                 this.vytvorTabulku();
